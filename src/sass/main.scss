@@ -1,0 +1,51 @@
+@import 'modules/variables',
+		'modules/reset',
+		'modules/intro',
+		'modules/bootstrap';
+
+.player-list{
+	width:250px;
+	display:none;
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:999;
+	.play-hide{
+		display: inline-block;
+		line-height: 2;
+		text-align: center;
+		background: rgba(0,0,0,.85);
+		text-decoration: none;
+		color:$mainColor;
+		width: 100%;
+	}
+}		
+
+#player{
+	width:10%;
+	
+	.tdicon-td_logo-link, .social, .playlist{
+		display: none;
+	}
+}
+
+#player{
+	.td.player{
+		border:none;
+		.playlist-table{
+			tbody{
+				tr{
+					td{
+						border-bottom:none;
+					}
+				}
+			}
+		}
+		.scrubber, .controls, .info{
+			border-bottom:none;
+			border-top:none;
+		}
+	}	
+}
+
+

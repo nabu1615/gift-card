@@ -1,0 +1,245 @@
+@import '../modules/variables';
+
+.intro{
+	background: url("../images/fpo/intro.jpg") no-repeat center center fixed;;
+	width:100%;
+	min-height:100vh;
+	display: inline-block;
+	background-size:cover;
+	.content {
+		
+	}
+}
+
+.content{
+	position:absolute;
+	width:98%;
+	height:86%;
+}
+
+.logo{
+	max-width:30%;
+	margin:0 auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:40px 0;
+	position: relative;
+	top:8%;
+	img{
+		width:100%;
+	}
+}
+
+.social{
+	display:flex;
+	justify-content:flex-end;
+	padding:1.6em 0;
+	margin:0;
+	width:100%;
+	text-align: right;
+	.item{
+		width:37px;
+		height:37px;
+		background-image:url("../images/misc/redes.png");
+		float:left;
+		margin:0 5px;
+		&:hover{
+			opacity:.6;
+		}
+		&.pinterest{
+			background-position:-10px -1px;
+		}
+		&.facebook{
+			background-position:-62px -1px;
+		}
+		&.youtube{
+			background-position:-115px -1px;
+		}
+		&.vimeo{
+			background-position:-166px -1px;
+		}
+		&.instagram{
+			background-position:-219px -1px;
+		}
+		&.instagram{
+			background-position:-219px -1px;
+		}
+		&.twitter{
+			background-position:-272px -1px;
+		}
+	}
+}
+
+.language{
+	width:100%;
+	font-family:$serifFont;
+	display: flex;
+	justify-content:flex-end;
+	li{
+		padding-left:0;
+		padding-right:25px;
+		padding-top:20px;
+		padding-bottom:20px;
+		float:left;
+		&:first-child{
+			padding:20px 0;
+			&:after{
+				content: " / ";
+				padding:0 10px;
+				color:$mainColor;
+
+			}
+		}
+		a{
+			text-decoration: none;
+			color:$mainColor;
+			&:hover{
+				color:rgba($mainColor, .7);
+				border-bottom:2px solid rgba($mainColor, .6);
+			}
+		}
+	}
+}
+
+
+.nav{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background: linear-gradient(to bottom, rgba(2,0,0,0) 0%,rgba(0,0,0,.9) 100%);
+	ul{
+		display:flex;
+		position:relative;
+		font-family:$serifFont;
+		margin:0 auto;
+		padding:45px 0;
+		
+	}
+	li{
+		float:left;
+		flex:auto;
+		text-align: center;
+		padding:0 60px;
+		position:relative;
+		top:10px;
+		a{
+			font-size:1.5em;
+			color:rgba(white, .6);
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 800;
+			letter-spacing:5px;
+			&:hover{
+				color:rgba(white, .8);
+				border-bottom:2px solid rgba($mainColor, 1);
+			}
+		}
+	}
+}
+
+.btn-rockola{
+	position:absolute;
+	right:0;
+	bottom:15px;
+	color:$mainColor;
+	font-family:$serifFont;
+	text-decoration: none;
+	padding:10px 25px;
+	&:hover{
+		opacity:.6;
+	}
+	&:before{
+	    content: "";
+	    background-image: url("../images/misc/rockola.png");
+	    width: 28px;
+	    height: 33px;
+	    margin-right: 4px;
+	    float: left;
+	    margin-top: -2px;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+}
+
+.btn-contacto{
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:10px 25px;
+	padding-bottom:20px;
+	text-decoration: none;
+	color:$mainColor;
+	font-family:$serifFont;
+	&:hover{
+		opacity:.8;
+	}
+	.one{
+		margin-bottom:5px;
+	}
+	.two{
+		padding-left:20px;
+	}
+}
+
+.btn-down{
+	width:100%;
+	text-align: center;
+	position:absolute;
+	bottom:0;
+	.fa-caret-down{
+		color:rgba(white, .8);
+		cursor:pointer;
+		font-size:2.3em;
+		position: relative;
+    	left: -12px;
+    	opacity:.6;
+		&:hover{
+			opacity:1;
+		}
+	}
+}
+
+.border-top{
+	position:absolute;
+	top:0;
+	width:0;
+	height:2px;
+	background-color:$mainColor;
+}
+
+.border-right{
+	position:absolute;
+	top:0;
+	right:0;
+	height:0;
+	width:2px;
+	background-color:$mainColor;
+	z-index:99;
+}
+
+.border-bottom{
+	position:absolute;
+	bottom:0;
+	width:0;
+	height:2px;
+	background-color:$mainColor;
+	z-index:99;
+}
+
+.border-left{
+	position:absolute;
+	top:0;
+	left:0;
+	height:0;
+	width:2px;
+	background-color:$mainColor;
+	z-index:99;
+}
+
+
+
+
