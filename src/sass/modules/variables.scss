@@ -1,6 +1,6 @@
-$mainColor: #a29061;
-$serifFont: 'EB Garamond', serif;
-$mainFont: 'Muli', sans-serif;
+$mainColor: #2B2C39;
+$linkColor: #E42949;
+$mainFont: 'Open Sans', sans-serif;;
 
 
 //Break Points 
@@ -8,3 +8,11 @@ $mainFont: 'Muli', sans-serif;
 $break-desktop:992px;
 $break-padding:1015px;
 $break-medium: 768px;
+
+//Mixins
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}

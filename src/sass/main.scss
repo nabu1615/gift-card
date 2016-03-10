@@ -1,51 +1,105 @@
 @import 'modules/variables',
 		'modules/reset',
-		'modules/intro',
-		'modules/bootstrap';
+		'modules/header';
 
-.player-list{
-	width:250px;
-	display:none;
-	position:absolute;
-	right:0;
-	bottom:0;
-	z-index:999;
-	.play-hide{
-		display: inline-block;
-		line-height: 2;
-		text-align: center;
-		background: rgba(0,0,0,.85);
-		text-decoration: none;
-		color:$mainColor;
+.flex {
+	display: flex;
+}
+
+body {
+	font-family: $mainFont;
+}
+
+a {
+	text-decoration: none;
+	color: $mainColor;
+
+	&:hover {
+		color: $linkColor;
+	}
+}
+
+.change {
+	&:hover {
+		opacity: .6;
+		transition: all ease-in-out .5s;
+	}
+}
+
+header {
+	padding: em(10) 0;
+	box-shadow: 1px 2px 1px rgba($mainColor, .2);
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.logo {
+		width: 10%;
+		justify-content: flex-start;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.flex-box {
+		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
+		justify-content: flex-end;
 	}
-}		
 
-#player{
-	width:10%;
-	
-	.tdicon-td_logo-link, .social, .playlist{
-		display: none;
+	.nav-top, .main-nav {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: baseline;
+	}
+
+	.nav-top {
+		height: 30px;
+		font-size: em(14);
+		padding: em(10) 0;
+
+		a {
+			padding: 0 em(10);
+		}
+	}
+
+	.sign-up, .log-in {
+		&:before {
+			content: "";
+			float: left;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			margin-right: em(5);
+		}
+	}
+
+	.sign-up:before {
+		width: 18px;
+		height: 15px;
+		background-image: url("../images/base/sign-up.svg");
+	}
+
+	.log-in:before {
+		width: 22px;
+		height: 22px;
+		background-image: url("../images/base/log-in.svg");
+		position: relative;
+		bottom: 4px;
+	}
+
+	.main-nav ul {
+		li {
+			display: inline-block;
+			font-weight: bold;
+			font-size: em(16);
+			padding: 0 em(10);
+		}
 	}
 }
-
-#player{
-	.td.player{
-		border:none;
-		.playlist-table{
-			tbody{
-				tr{
-					td{
-						border-bottom:none;
-					}
-				}
-			}
-		}
-		.scrubber, .controls, .info{
-			border-bottom:none;
-			border-top:none;
-		}
-	}	
-}
-
 
