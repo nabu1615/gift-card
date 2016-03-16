@@ -1,2 +1,147 @@
 @import 'variables';
 
+header {
+	padding: em(10) 0;
+	box-shadow: 1px 2px 1px rgba($mainColor, .2);
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.container.flex {
+		flex-wrap: wrap;
+		@media screen and (min-width: $break-medium) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.logo {
+		width: 40%;
+		justify-content: flex-start;
+		@media screen and (min-width: $break-medium) {
+			width: 30%;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.nav.hide-s {
+		display: none;
+		@media screen and (min-width: $break-medium) {
+			display: flex;
+		}
+	}
+
+	.small-menu {
+		position: absolute;
+		right: 0;
+		top: em(25);
+		width: 70px;
+		cursor: pointer;
+		text-align: right;
+		span {
+			width: 40px;
+			height: 4px;
+			background: rgba($black, .5);
+			float:right;
+			margin: em(2) 0;
+		}
+
+		p {
+			display: inline-block;
+			font-size: em(12);
+			margin-top: em(5);
+			text-align: center;
+			width: 40px;
+		}
+	}
+
+	div.nav {
+		display: inline-block;
+		width: 100%;
+		border-top: 1px solid rgba($black, .2);
+		padding-top: 10px;
+		margin-top: 10px;
+		@media screen and (min-width: $break-medium) {
+			border: none;
+			display: flex;
+		}
+
+		li {
+			width: 100%;
+			text-align: center;
+			margin: em(5) 0;
+			@media screen and (min-width: $break-medium) {
+				width: auto;
+			}
+		}
+	}
+
+	.flex-box {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	.nav-top, .main-nav {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: baseline;
+	}
+
+	.nav-top {
+		height: 20px;
+		font-size: em(14);
+		padding: em(10) 0;
+		justify-content: center;
+		@media screen and (min-width: $break-medium) {
+			justify-content: flex-end;
+		}
+
+		a {
+			padding: 0 em(10);
+		}
+	}
+
+	.sign-up, .log-in {
+		&:before {
+			content: "";
+			float: left;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			margin-right: em(5);
+		}
+	}
+
+	.sign-up:before {
+		width: 18px;
+		height: 15px;
+		background-image: url("../images/base/sign-up.svg");
+	}
+
+	.log-in:before {
+		width: 22px;
+		height: 22px;
+		background-image: url("../images/base/log-in.svg");
+		position: relative;
+		bottom: 4px;
+	}
+
+	.main-nav ul {
+		li {
+			display: inline-block;
+			font-weight: bold;
+			font-size: em(16);
+			padding: 0 em(10);
+		}
+	}
+}
+
+
+
