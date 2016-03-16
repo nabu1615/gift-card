@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  padding: 0.625em 0;
+  box-shadow: 1px 2px 1px rgba(43, 44, 57, 0.2); }
+  header .container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative; }
+  header .container.flex {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      header .container.flex {
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; } }
+  header .logo {
+    width: 40%;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    @media screen and (min-width: 768px) {
+      header .logo {
+        width: 30%; } }
+    header .logo img {
+      width: 100%; }
+  header .nav.hide-s {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      header .nav.hide-s {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+  header .small-menu {
+    position: absolute;
+    right: 0;
+    top: 1.5625em;
+    width: 70px;
+    cursor: pointer;
+    text-align: right; }
+    header .small-menu span {
+      width: 40px;
+      height: 4px;
+      background: rgba(0, 0, 0, 0.5);
+      float: right;
+      margin: 0.125em 0; }
+    header .small-menu p {
+      display: inline-block;
+      font-size: 0.75em;
+      margin-top: 0.3125em;
+      text-align: center;
+      width: 40px; }
+  header div.nav {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    margin-top: 10px; }
+    @media screen and (min-width: 768px) {
+      header div.nav {
+        border: none;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+    header div.nav li {
+      width: 100%;
+      text-align: center;
+      margin: 0.3125em 0; }
+      @media screen and (min-width: 768px) {
+        header div.nav li {
+          width: auto; } }
+  header .flex-box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 100%;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  header .nav-top, header .main-nav {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+  header .nav-top {
+    height: 20px;
+    font-size: 0.875em;
+    padding: 0.625em 0;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (min-width: 768px) {
+      header .nav-top {
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+    header .nav-top a {
+      padding: 0 0.625em; }
+  header .sign-up:before, header .log-in:before {
+    content: "";
+    float: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 0.3125em; }
+  header .sign-up:before {
+    width: 18px;
+    height: 15px;
+    background-image: url("../images/base/sign-up.svg"); }
+  header .log-in:before {
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/base/log-in.svg");
+    position: relative;
+    bottom: 4px; }
+  header .main-nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0 0.625em; }
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #2B2C39; }
+  a:hover {
+    color: #E42949; }
+
+.hide-s {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .hide-s {
+      display: block; } }
+
+.hide-m {
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .hide-m {
+      display: none; } }
+
+.change:hover {
+  opacity: .6;
+  transition: all ease-in-out .5s; }

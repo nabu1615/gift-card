@@ -1,0 +1,218 @@
+.intro {
+  background: url("../images/fpo/intro.jpg") no-repeat center center fixed;
+  width: 100%;
+  min-height: 100vh;
+  display: inline-block;
+  background-size: cover; }
+
+.content {
+  position: absolute;
+  width: 98%;
+  height: 86%; }
+
+.logo {
+  max-width: 30%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  position: relative;
+  top: 8%; }
+  .logo img {
+    width: 100%; }
+
+.social {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1.6em 0;
+  margin: 0;
+  width: 100%;
+  text-align: right; }
+  .social .item {
+    width: 37px;
+    height: 37px;
+    background-image: url("../images/misc/redes.png");
+    float: left;
+    margin: 0 5px; }
+    .social .item:hover {
+      opacity: .6; }
+    .social .item.pinterest {
+      background-position: -10px -1px; }
+    .social .item.facebook {
+      background-position: -62px -1px; }
+    .social .item.youtube {
+      background-position: -115px -1px; }
+    .social .item.vimeo {
+      background-position: -166px -1px; }
+    .social .item.instagram {
+      background-position: -219px -1px; }
+    .social .item.instagram {
+      background-position: -219px -1px; }
+    .social .item.twitter {
+      background-position: -272px -1px; }
+
+.language {
+  width: 100%;
+  font-family: "EB Garamond", serif;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .language li {
+    padding-left: 0;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left; }
+    .language li:first-child {
+      padding: 20px 0; }
+      .language li:first-child:after {
+        content: " / ";
+        padding: 0 10px;
+        color: #a29061; }
+    .language li a {
+      text-decoration: none;
+      color: #a29061; }
+      .language li a:hover {
+        color: rgba(162, 144, 97, 0.7);
+        border-bottom: 2px solid rgba(162, 144, 97, 0.6); }
+
+.nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(2, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%); }
+  .nav ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    font-family: "EB Garamond", serif;
+    margin: 0 auto;
+    padding: 45px 0; }
+  .nav li {
+    float: left;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+    text-align: center;
+    padding: 0 60px;
+    position: relative;
+    top: 10px; }
+    .nav li a {
+      font-size: 1.5em;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 5px; }
+      .nav li a:hover {
+        color: rgba(255, 255, 255, 0.8);
+        border-bottom: 2px solid #a29061; }
+
+.btn-rockola {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  color: #a29061;
+  font-family: "EB Garamond", serif;
+  text-decoration: none;
+  padding: 10px 25px; }
+  .btn-rockola:hover {
+    opacity: .6; }
+  .btn-rockola:before {
+    content: "";
+    background-image: url("../images/misc/rockola.png");
+    width: 28px;
+    height: 33px;
+    margin-right: 4px;
+    float: left;
+    margin-top: -2px;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+
+.btn-contacto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 25px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #a29061;
+  font-family: "EB Garamond", serif; }
+  .btn-contacto:hover {
+    opacity: .8; }
+  .btn-contacto .one {
+    margin-bottom: 5px; }
+  .btn-contacto .two {
+    padding-left: 20px; }
+
+.btn-down {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0; }
+  .btn-down .fa-caret-down {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-size: 2.3em;
+    position: relative;
+    left: -12px;
+    opacity: .6; }
+    .btn-down .fa-caret-down:hover {
+      opacity: 1; }
+
+.border-top {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a29061; }
+
+.border-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 2px;
+  background-color: #a29061;
+  z-index: 99; }
+
+.border-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a29061;
+  z-index: 99; }
+
+.border-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 2px;
+  background-color: #a29061;
+  z-index: 99; }
