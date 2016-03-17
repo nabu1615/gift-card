@@ -15,13 +15,16 @@ header {
             -ms-flex-wrap: nowrap;
                 flex-wrap: nowrap; } }
   header .logo {
-    width: 40%;
+    width: 150px;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
     @media screen and (min-width: 768px) {
       header .logo {
-        width: 30%; } }
+        width: 20%; } }
+    @media screen and (min-width: 992px) {
+      header .logo {
+        width: 15%; } }
     header .logo img {
       width: 100%; }
   header .nav.hide-s {

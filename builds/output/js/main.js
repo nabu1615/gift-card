@@ -8,11 +8,10 @@ $(function() {
     menu.slideToggle();
 });
 
-$(window).resize(function(){
+    $(window).resize(function(){
         var w = $(window).width();
-        if(w > 992 ) {
-        menu.removeAttr('style');
-        $('body').removeClass('hidden-scroll');
+        if(w > 768 ) {
+            menu.removeAttr('style');
         }
     });
 });

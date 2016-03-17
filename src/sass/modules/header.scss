@@ -18,10 +18,14 @@ header {
 	}
 
 	.logo {
-		width: 40%;
+		width: 150px;
 		justify-content: flex-start;
 		@media screen and (min-width: $break-medium) {
-			width: 30%;
+			width: 20%;
+		}
+
+		@media screen and (min-width: $break-desktop) {
+			width: 15%;
 		}
 
 		img {
