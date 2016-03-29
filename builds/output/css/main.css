@@ -107,6 +107,75 @@ table {
     font-size: 0.875em;
     font-weight: 100; }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2087,7 +2156,9 @@ table {
 
 header {
   padding: 0.625em 0;
-  box-shadow: 1px 2px 1px rgba(43, 44, 57, 0.2); }
+  box-shadow: 1px 2px 1px rgba(43, 44, 57, 0.2);
+  z-index: 2;
+  position: relative; }
   header .container {
     width: 90%;
     margin: 0 auto;
@@ -2216,6 +2287,73 @@ header {
     font-weight: bold;
     font-size: 1em;
     padding: 0 0.625em; }
+
+.home.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative; }
+
+.home .slide-home {
+  position: relative;
+  font-family: "Open Sans", sans-serif; }
+  .home .slide-home .slick-slide {
+    position: relative; }
+  .home .slide-home .item img {
+    width: 100%; }
+  .home .slide-home .slick-caption {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 2;
+    padding: 1.25em;
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .home .slide-home .slick-caption {
+        display: block; } }
+    .home .slide-home .slick-caption .title {
+      font-size: 1.25em;
+      font-weight: 800;
+      color: #E42949;
+      padding-left: 40px; }
+    .home .slide-home .slick-caption .text {
+      font-weight: 800;
+      padding: 0.625em 0 0.625em 40px;
+      line-height: 120%; }
+    .home .slide-home .slick-caption .btn {
+      background: #E42949;
+      border: 0;
+      margin: 0.3125em 0;
+      color: white;
+      padding: 0.625em;
+      border-radius: 5px;
+      font-size: 0.75em;
+      margin-left: 40px;
+      cursor: pointer; }
+  .home .slide-home .slick-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center; }
+    .home .slide-home .slick-dots li, .home .slide-home .slick-dots li button {
+      border: 0;
+      border-radius: 100%;
+      font-size: 0; }
+    .home .slide-home .slick-dots li.slick-active {
+      background: #E42949; }
+    .home .slide-home .slick-dots li button {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background: transparent; }
+      .home .slide-home .slick-dots li button:hover {
+        background: #E42949; }
+    .home .slide-home .slick-dots li {
+      margin: 10px 5px;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      background: white; }
 
 .flex {
   display: -webkit-flex;

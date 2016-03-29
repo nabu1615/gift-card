@@ -1,0 +1,98 @@
+@import 'variables';
+
+.home {
+	&.container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.slide-home {
+		position: relative;
+		font-family: $mainFont;
+
+		.slick-slide {
+			position: relative;
+		}
+
+		.item {
+			img {
+				width: 100%;
+			}
+		}
+
+		.slick-caption {
+			width: 40%;
+			position: absolute;
+			top: 20%;
+			right: 0;
+			z-index: 2;
+			padding: em(20);
+			display: none;
+			@media screen and (min-width: $break-medium) {
+				display: block;
+			}
+
+			.title {
+				font-size: em(20);
+				font-weight: 800;
+				color: $linkColor;
+				padding-left: 40px;
+			}
+
+			.text {
+				font-weight: 800;
+				padding: em(10) 0 em(10) 40px;
+				line-height: 120%;
+			}
+
+			.btn {
+				background: $linkColor;
+				border: 0;
+				margin: em(5) 0;
+				color: $white;
+				padding: em(10);
+				border-radius: 5px;
+				font-size: em(12);
+				margin-left: 40px;
+				cursor: pointer;
+			}
+		}
+
+		.slick-dots {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+
+			li, li button {
+				border: 0;
+				border-radius: 100%;
+				font-size: 0;
+			}
+
+			li.slick-active {
+				background: $linkColor;
+			}
+
+			li button {
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+				background: transparent;
+
+				&:hover {
+					background: $linkColor;
+				}
+			}
+
+			li {
+				margin: 10px 5px;
+				width: 18px;
+				height: 18px;
+				display: inline-block;
+				background: $white;
+			}
+		}
+	}
+}
