@@ -4,7 +4,10 @@
 		'modules/slick',
 		'modules/font-awesome',
 		'modules/header',
-		'modules/home';
+		'modules/home',
+		'modules/steps',
+		'modules/categories',
+		'modules/pay';
 
 .flex {
 	display: flex;
@@ -41,6 +44,21 @@ a {
 	&:hover {
 		opacity: .6;
 		transition: all ease-in-out .5s;
+	}
+}
+
+.btn {
+	background: $linkColor;
+	border: 0;
+	margin: em(5) 0;
+	color: $white;
+	padding: em(10);
+	border-radius: 5px;
+	font-size: em(12);
+	cursor: pointer;
+	font-family: $mainFont;
+	&:hover {
+		opacity: .7;
 	}
 }
 

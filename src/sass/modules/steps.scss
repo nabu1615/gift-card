@@ -1,0 +1,64 @@
+@import 'variables';
+
+.steps {
+	.wrapper-steps {
+		display: inline-block;
+		width: 100%;
+		position: relative;
+	}
+
+	.intro {
+		padding: em(10) 0;
+		margin-bottom: em(30);
+		text-align: center;
+		background-color: $linkColor;
+		color: $white;
+		font-size: em(22);
+	}
+
+	.items, .center-image {
+		float: left;
+	}
+
+	.item {
+		display: flex;
+		margin-bottom: em(40);
+		padding: 0 30px;
+		&:nth-child(even){
+			margin-bottom: 0;
+		}
+		.text {
+			padding: 0 20px;
+			margin-top: em(40);
+		}
+		.title, .info {
+			width: 100%;
+		}
+
+		.title {
+			font-weight: 800;
+			margin-bottom: em(10);
+			font-size: em(16);
+		}
+
+		.info {
+			font-size: em(14);
+		}
+	}
+
+	.items {
+		width: 38%;
+	}
+
+	.reverse {
+		flex-direction: row-reverse;
+	}
+
+	.center-image {
+		width: 250px;
+		height: 250px;
+		margin-top: em(80);
+		background-size: 100%;
+		background-image: url('../images/fpo/phone.png');
+	}
+}

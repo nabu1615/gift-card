@@ -1,0 +1,15 @@
+.categories {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: em(20) 0; }
+  .categories .item {
+    display: inline-block;
+    padding: 0 20px em(10) 20px;
+    margin: 0 20px;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.2); }
+  .categories .image {
+    padding-bottom: em(10); }
+  .categories .btn {
+    margin-top: em(30);
+    padding: em(10) 40px; }

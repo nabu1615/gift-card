@@ -1,4 +1,4 @@
-.home.container {
+.home .container {
   width: 90%;
   margin: 0 auto;
   position: relative; }
@@ -8,16 +8,19 @@
   font-family: "Open Sans", sans-serif; }
   .home .slide-home .slick-slide {
     position: relative; }
+  .home .slide-home .btn {
+    margin-left: 40px; }
   .home .slide-home .item img {
     width: 100%; }
   .home .slide-home .slick-caption {
-    width: 40%;
+    width: 35%;
     position: absolute;
     top: 20%;
-    right: 0;
+    right: 15px;
     z-index: 2;
     padding: 1.25em;
-    display: none; }
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7); }
     @media screen and (min-width: 768px) {
       .home .slide-home .slick-caption {
         display: block; } }
@@ -30,16 +33,6 @@
       font-weight: 800;
       padding: 0.625em 0 0.625em 40px;
       line-height: 120%; }
-    .home .slide-home .slick-caption .btn {
-      background: #E42949;
-      border: 0;
-      margin: 0.3125em 0;
-      color: white;
-      padding: 0.625em;
-      border-radius: 5px;
-      font-size: 0.75em;
-      margin-left: 40px;
-      cursor: pointer; }
   .home .slide-home .slick-dots {
     position: absolute;
     bottom: 0;

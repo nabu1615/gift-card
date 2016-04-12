@@ -1,7 +1,7 @@
 @import 'variables';
 
 .home {
-	&.container {
+	.container {
 		width: 90%;
 		margin: 0 auto;
 		position: relative;
@@ -15,6 +15,10 @@
 			position: relative;
 		}
 
+		.btn {
+			margin-left: 40px;
+		}
+
 		.item {
 			img {
 				width: 100%;
@@ -22,13 +26,14 @@
 		}
 
 		.slick-caption {
-			width: 40%;
+			width: 35%;
 			position: absolute;
 			top: 20%;
-			right: 0;
+			right: 15px;
 			z-index: 2;
 			padding: em(20);
 			display: none;
+			background-color: rgba(255,255,255, .7);
 			@media screen and (min-width: $break-medium) {
 				display: block;
 			}
@@ -44,18 +49,6 @@
 				font-weight: 800;
 				padding: em(10) 0 em(10) 40px;
 				line-height: 120%;
-			}
-
-			.btn {
-				background: $linkColor;
-				border: 0;
-				margin: em(5) 0;
-				color: $white;
-				padding: em(10);
-				border-radius: 5px;
-				font-size: em(12);
-				margin-left: 40px;
-				cursor: pointer;
 			}
 		}
 

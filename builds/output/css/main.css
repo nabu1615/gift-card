@@ -2288,7 +2288,7 @@ header {
     font-size: 1em;
     padding: 0 0.625em; }
 
-.home.container {
+.home .container {
   width: 90%;
   margin: 0 auto;
   position: relative; }
@@ -2298,16 +2298,19 @@ header {
   font-family: "Open Sans", sans-serif; }
   .home .slide-home .slick-slide {
     position: relative; }
+  .home .slide-home .btn {
+    margin-left: 40px; }
   .home .slide-home .item img {
     width: 100%; }
   .home .slide-home .slick-caption {
-    width: 40%;
+    width: 35%;
     position: absolute;
     top: 20%;
-    right: 0;
+    right: 15px;
     z-index: 2;
     padding: 1.25em;
-    display: none; }
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7); }
     @media screen and (min-width: 768px) {
       .home .slide-home .slick-caption {
         display: block; } }
@@ -2320,16 +2323,6 @@ header {
       font-weight: 800;
       padding: 0.625em 0 0.625em 40px;
       line-height: 120%; }
-    .home .slide-home .slick-caption .btn {
-      background: #E42949;
-      border: 0;
-      margin: 0.3125em 0;
-      color: white;
-      padding: 0.625em;
-      border-radius: 5px;
-      font-size: 0.75em;
-      margin-left: 40px;
-      cursor: pointer; }
   .home .slide-home .slick-dots {
     position: absolute;
     bottom: 0;
@@ -2354,6 +2347,130 @@ header {
       height: 18px;
       display: inline-block;
       background: white; }
+
+.steps .wrapper-steps {
+  display: inline-block;
+  width: 100%;
+  position: relative; }
+
+.steps .intro {
+  padding: 0.625em 0;
+  margin-bottom: 1.875em;
+  text-align: center;
+  background-color: #E42949;
+  color: white;
+  font-size: 1.375em; }
+
+.steps .items, .steps .center-image {
+  float: left; }
+
+.steps .item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.5em;
+  padding: 0 30px; }
+  .steps .item:nth-child(even) {
+    margin-bottom: 0; }
+  .steps .item .text {
+    padding: 0 20px;
+    margin-top: 2.5em; }
+  .steps .item .title, .steps .item .info {
+    width: 100%; }
+  .steps .item .title {
+    font-weight: 800;
+    margin-bottom: 0.625em;
+    font-size: 1em; }
+  .steps .item .info {
+    font-size: 0.875em; }
+
+.steps .items {
+  width: 38%; }
+
+.steps .reverse {
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.steps .center-image {
+  width: 250px;
+  height: 250px;
+  margin-top: 5em;
+  background-size: 100%;
+  background-image: url("../images/fpo/phone.png"); }
+
+.categories {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.25em 0; }
+  .categories .item {
+    display: inline-block;
+    padding: 0 20px 0.625em 20px;
+    margin: 0 20px;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.2); }
+  .categories .image {
+    padding-bottom: 0.625em; }
+  .categories .btn {
+    margin-top: 1.875em;
+    padding: 0.625em 40px; }
+
+.brands {
+  padding: 1.25em 0 30 0;
+  margin-top: 0.625em;
+  background-color: rgba(225, 224, 225, 0.6); }
+  .brands .title {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2em;
+    padding: 0.9375em 0 0.625em 0; }
+  .brands .item .image {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.625em 0 2.5em 0; }
+  .brands .slick-arrow {
+    position: absolute;
+    top: 25%;
+    border: 0;
+    text-indent: -9999px;
+    font-size: 0;
+    width: 37px;
+    height: 72px;
+    background-color: transparent;
+    z-index: 9999;
+    cursor: pointer; }
+    .brands .slick-arrow:hover {
+      opacity: .7; }
+  .brands .slick-next {
+    right: -20px;
+    background-image: url("../images/fpo/arrow.png"); }
+  .brands .slick-prev {
+    left: -20px;
+    background-image: url("../images/fpo/arrow.png");
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.pay {
+  padding: 1.25em 0; }
+  .pay .title {
+    text-align: center;
+    font-weight: 100; }
+  .pay .item {
+    padding: 1.25em 0; }
+  .pay .item .image img {
+    display: inline-block;
+    max-width: 100px; }
+  .pay .pay-brands {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .flex {
   display: -webkit-flex;
@@ -2384,3 +2501,16 @@ a {
 .change:hover {
   opacity: .6;
   transition: all ease-in-out .5s; }
+
+.btn {
+  background: #E42949;
+  border: 0;
+  margin: 0.3125em 0;
+  color: white;
+  padding: 0.625em;
+  border-radius: 5px;
+  font-size: 0.75em;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif; }
+  .btn:hover {
+    opacity: .7; }

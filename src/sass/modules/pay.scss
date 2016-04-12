@@ -1,0 +1,74 @@
+@import 'variables';
+
+
+.brands {
+	padding: em(20) 0 (30) 0;
+	margin-top: em(10);
+	background-color: rgba(225,224,225, .6);
+
+	.title {
+		text-align: center;
+		font-weight: 100;
+		font-size: em(32);
+		padding: em(15) 0 em(10) 0;
+	}
+
+	.item .image {
+		display: flex;
+		justify-content: center;
+		padding: em(10) 0 em(40) 0;
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 25%;
+		border: 0;
+		text-indent: -9999px;
+		font-size: 0;
+		width: 37px;
+		height: 72px;
+		background-color: transparent;
+		z-index: 9999;
+		cursor: pointer;
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+
+	.slick-next {
+		right: -20px;
+		background-image: url('../images/fpo/arrow.png');
+	}
+
+	.slick-prev {
+		left: -20px;
+		background-image: url('../images/fpo/arrow.png');
+		 transform: rotate(180deg);
+	}
+
+}
+
+
+.pay {
+	padding: em(20) 0;
+
+	.title {
+		text-align: center;
+		font-weight: 100;
+	}
+
+	.item {
+		padding: em(20) 0;
+	}
+
+	.item .image img {
+		display: inline-block;
+		max-width: 100px;
+	}
+
+	.pay-brands {
+		display: flex;
+		justify-content: center;
+	}
+}

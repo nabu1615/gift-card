@@ -1,0 +1,56 @@
+.brands {
+  padding: 1.25em 0 30 0;
+  margin-top: 0.625em;
+  background-color: rgba(225, 224, 225, 0.6); }
+  .brands .title {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2em;
+    padding: 0.9375em 0 0.625em 0; }
+  .brands .item .image {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.625em 0 2.5em 0; }
+  .brands .slick-arrow {
+    position: absolute;
+    top: 25%;
+    border: 0;
+    text-indent: -9999px;
+    font-size: 0;
+    width: 37px;
+    height: 72px;
+    background-color: transparent;
+    z-index: 9999;
+    cursor: pointer; }
+    .brands .slick-arrow:hover {
+      opacity: .7; }
+  .brands .slick-next {
+    right: -20px;
+    background-image: url("../images/fpo/arrow.png"); }
+  .brands .slick-prev {
+    left: -20px;
+    background-image: url("../images/fpo/arrow.png");
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.pay {
+  padding: 1.25em 0; }
+  .pay .title {
+    text-align: center;
+    font-weight: 100; }
+  .pay .item {
+    padding: 1.25em 0; }
+  .pay .item .image img {
+    display: inline-block;
+    max-width: 100px; }
+  .pay .pay-brands {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
