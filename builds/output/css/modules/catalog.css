@@ -1,0 +1,152 @@
+.catalog .container {
+  width: 90%;
+  margin: auto;
+  padding: 1.25em 0; }
+
+.catalog .items .item.item-detail {
+  width: 75%;
+  padding-left: 0; }
+
+.catalog .items {
+  display: inline-block;
+  width: 100%; }
+  .catalog .items .item-content {
+    border: 2px solid rgba(107, 107, 107, 0.2);
+    padding: 0.625em 0;
+    padding-bottom: 0; }
+    .catalog .items .item-content .brand {
+      font-weight: 900; }
+    .catalog .items .item-content .image img {
+      width: 60%; }
+    .catalog .items .item-content .price {
+      background-color: rgba(107, 107, 107, 0.7);
+      color: white;
+      padding: 0.75em 0;
+      margin-top: 0.625em; }
+  .catalog .items .item {
+    padding: 0 0.3125em;
+    width: 25%;
+    float: left;
+    padding-bottom: 0.6875em;
+    box-sizing: border-box;
+    cursor: pointer; }
+    .catalog .items .item:nth-child(n+4) {
+      padding-right: 0; }
+    .catalog .items .item:first-child {
+      padding-left: 0; }
+    .catalog .items .item:last-child {
+      padding-right: 0; }
+    .catalog .items .item .address label {
+      padding-bottom: 0.625em;
+      display: inline-block;
+      width: 100%;
+      font-weight: 900; }
+    .catalog .items .item .create-address, .catalog .items .item .add-car {
+      width: 100%;
+      display: inline-block;
+      padding: 0.9375em 0;
+      margin-bottom: 0.9375em;
+      text-align: center;
+      color: white;
+      font-size: 0.875em; }
+    .catalog .items .item .add-car {
+      background-color: #E42949; }
+    .catalog .items .item .create-address {
+      background-color: black; }
+    .catalog .items .item.item-detail .image {
+      width: 15%;
+      display: inline-block; }
+      .catalog .items .item.item-detail .image img {
+        width: 100%; }
+    .catalog .items .item.item-detail textarea {
+      margin: 0.9375em 0; }
+    .catalog .items .item.item-detail select, .catalog .items .item.item-detail textarea {
+      padding-right: 0.625em;
+      padding-left: 0.625em; }
+    .catalog .items .item.item-detail form {
+      margin-top: 1.875em;
+      padding: 0 1.25em;
+      width: 50%;
+      display: inline-block;
+      box-sizing: border-box; }
+    .catalog .items .item.item-detail .detail-content {
+      margin-top: 1.875em;
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+      padding-right: 1.25em; }
+    .catalog .items .item.item-detail .info {
+      display: inline-block;
+      width: 79%;
+      vertical-align: top;
+      margin-top: 1.5625em;
+      padding: 0 0.625em;
+      box-sizing: border-box; }
+      .catalog .items .item.item-detail .info .brand, .catalog .items .item.item-detail .info .text {
+        text-align: left; }
+      .catalog .items .item.item-detail .info .brand {
+        font-size: 1.25em;
+        padding-bottom: 0.625em; }
+  .catalog .items .image, .catalog .items .brand, .catalog .items .price {
+    width: 100%;
+    display: block;
+    text-align: center; }
+
+.catalog aside {
+  width: 15%;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 1.25em;
+  color: #6B6B6B;
+  padding-right: 1.25em; }
+  .catalog aside .title {
+    padding-bottom: 1.25em;
+    line-height: 120%;
+    font-weight: 600; }
+  .catalog aside .subtitle {
+    text-transform: uppercase;
+    margin-bottom: 0.625em;
+    padding-bottom: 0.375em;
+    border-bottom: 2px solid; }
+    .catalog aside .subtitle:before {
+      content: '';
+      width: 28px;
+      height: 17px;
+      float: left;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-image: url("../images/fpo/categories.svg"); }
+
+.catalog .nav-categories {
+  display: inline-block;
+  width: 100%; }
+  .catalog .nav-categories li {
+    padding: 0.625em 0 0.625em 1.5625em;
+    font-size: .8em; }
+
+.catalog .content {
+  display: inline-block;
+  vertical-align: top;
+  width: 82%; }
+
+.catalog .search {
+  margin-bottom: 1.25em; }
+
+.catalog .buttons {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1.25em; }
+  .catalog .buttons span {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 1.125em 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    background-color: #A7A5A5; }
+    .catalog .buttons span.active, .catalog .buttons span:hover {
+      background-color: #E42949; }
+    .catalog .buttons span.active {
+      border-right: 10px solid white; }

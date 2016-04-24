@@ -1,0 +1,223 @@
+@import 'variables';
+
+.catalog {
+	.container {
+		width: 90%;
+		margin: auto;
+		padding: em(20) 0;
+	}
+
+	 .items .item.item-detail {
+		width: 75%;
+		padding-left: 0;
+	}
+
+	.items {
+		display: inline-block;
+		width: 100%;
+
+		.item-content {
+			border: 2px solid rgba($textColor, .2);
+			padding: em(10) 0;
+			padding-bottom: 0;
+
+			.brand {
+				font-weight: 900;
+			}
+
+			.image {
+				img {
+					width: 60%;
+				}
+			}
+
+			.price {
+				background-color: rgba($textColor, .7);
+				color: $white;
+				padding: em(12) 0;
+				margin-top: em(10);
+			}
+		}
+
+		.item {
+			padding: 0 em(5);
+			width: 25%;
+			float: left;
+			padding-bottom: em(11);
+			box-sizing: border-box;
+			cursor: pointer;
+
+			&:nth-child(n+4) {
+				padding-right: 0;
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+
+			.address {
+				label {
+					padding-bottom: em(10);
+					display: inline-block;
+					width: 100%;
+					font-weight: 900;
+				}
+			}
+
+			.create-address, .add-car {
+				width: 100%;
+				display: inline-block;
+				padding: em(15) 0;
+				margin-bottom: em(15);
+				text-align: center;
+				color: $white;
+				font-size: em(14);
+			}
+
+			.add-car {
+				background-color: $linkColor;
+			}
+
+			.create-address {
+				background-color: $black;
+			}
+
+			&.item-detail {
+				.image {
+					width: 15%;
+					display: inline-block;
+					img {
+						width: 100%;
+					}
+				}
+
+				textarea {
+					margin: em(15) 0;
+				}
+
+				select, textarea {
+					padding-right: em(10);
+					padding-left: em(10);
+				}
+
+				form {
+					margin-top: em(30);
+					padding: 0 em(20);
+					width: 50%;
+					display: inline-block;
+					box-sizing: border-box;
+				}
+
+				.detail-content {
+					margin-top: em(30);
+					width: 49%;
+					display: inline-block;
+					vertical-align: top;
+					box-sizing: border-box;
+					padding-right: em(20);
+				}
+
+				.info {
+					display: inline-block;
+					width: 79%;
+					vertical-align: top;
+					margin-top: em(25);
+					padding: 0 em(10);
+					box-sizing: border-box;
+					.brand, .text {
+						text-align: left;
+					}
+
+					.brand {
+						font-size: em(20);
+						padding-bottom: em(10);
+					}
+				}
+			}
+
+		}
+
+		.image, .brand, .price {
+			width: 100%;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	aside {
+		width: 15%;
+		display: inline-block;
+		text-align: left;
+		padding-bottom: em(20);
+		color: $textColor;
+		padding-right: em(20);
+
+		.title {
+			padding-bottom: em(20);
+			line-height: 120%;
+			font-weight: 600;
+		}
+
+		.subtitle {
+			text-transform: uppercase;
+			margin-bottom: em(10);
+			padding-bottom: em(6);
+			border-bottom: 2px solid;
+			&:before {
+				content: '';
+				width: 28px;
+				height: 17px;
+				float: left;
+				background-size: 80%;
+				background-repeat: no-repeat;
+				background-image: url('../images/fpo/categories.svg');
+			}
+		}
+	}
+
+	.nav-categories {
+		display: inline-block;
+		width: 100%;
+
+		li {
+			padding: em(10) 0 em(10) em(25);
+			font-size: .8em;
+		}
+	}
+
+	.content {
+		display: inline-block;
+		vertical-align: top;
+		width: 82%;
+	}
+
+	.search {
+		margin-bottom: em(20);
+	}
+
+	.buttons {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: em(20);
+
+		span {
+			width: 50%;
+			float: left;
+			text-align: center;
+			padding: em(18) 0;
+			box-sizing: border-box;
+			color: $white;
+			cursor: pointer;
+			background-color: $catalogButton;
+			&.active, &:hover {
+				background-color: $linkColor;
+			}
+
+			&.active {
+				border-right: 10px solid $white;
+			}
+		}
+	}
+}
