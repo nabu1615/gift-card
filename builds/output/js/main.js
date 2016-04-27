@@ -3,7 +3,9 @@ $(function() {
     menu = $('.nav'),
     menuHeight = menu.height(),
     slideHome = $('.slide-home'),
-    slideBrands = $('.slide-brands');
+    slideBrands = $('.slide-brands'),
+    isDraggin = false,
+    rangeSelector = $(".range");
 
    $(pull).on('click', function(e) {
     e.preventDefault();
@@ -28,6 +30,24 @@ $(function() {
         slidesToShow: 4,
         slidesToScroll: 4
     });
+
+
+    $("#range-detail").ionRangeSlider({
+        type: "single",
+        values: [0, 10, 100, 1000, 10000, 100000, 1000000]
+    });
+
+    function hello() {
+        var rangeText = $('.irs-single').text();
+        return $(".range").find("#price-number").text(rangeText);
+    };
+
+    setInterval(function hello() {
+        var rangeText = $('.irs-single').text();
+        return $(".range").find("#price-number").text(rangeText);
+    }, 5);
+
+
 
 });
 

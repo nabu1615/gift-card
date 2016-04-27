@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2154,6 +2155,172 @@ table {
 .fa-percent:before {
   content: "\f295"; }
 
+/* Ion.RangeSlider
+// css version 2.0.3
+// © 2013-2014 Denis Ineshin | IonDen.com
+// ===================================================================================================================*/
+/* =====================================================================================================================
+// RangeSlider */
+.irs {
+  padding-top: 10px;
+  position: relative;
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.irs-line {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  outline: none !important;
+  background-color: #6B6B6B;
+  height: 8px; }
+
+.irs-line-left, .irs-line-mid, .irs-line-right {
+  position: absolute;
+  display: block;
+  top: 0; }
+
+.irs-line-left {
+  left: 0;
+  width: 11%; }
+
+.irs-line-mid {
+  left: 9%;
+  width: 82%; }
+
+.irs-line-right {
+  right: 0;
+  width: 11%; }
+
+.irs-bar {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 0; }
+
+.irs-bar-edge {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0; }
+
+.irs-shadow {
+  position: absolute;
+  display: none;
+  left: 0;
+  width: 0; }
+
+.irs-min, .irs-max {
+  font-size: 0; }
+
+.irs-slider {
+  position: absolute;
+  display: block;
+  cursor: default;
+  z-index: 1;
+  background: #C51223;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  border-radius: 50%; }
+
+.irs-slider.type_last {
+  z-index: 2; }
+
+.irs-min {
+  position: absolute;
+  display: block;
+  left: 0;
+  cursor: default; }
+
+.irs-max {
+  position: absolute;
+  display: block;
+  right: 0;
+  cursor: default; }
+
+.irs-from, .irs-to, .irs-single {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  cursor: default;
+  white-space: nowrap; }
+
+.irs-single {
+  font-size: 0; }
+
+.irs-grid {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; }
+
+.irs-with-grid .irs-grid {
+  display: block; }
+
+.irs-grid-pol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 8px;
+  background: #000; }
+
+.irs-grid-pol.small {
+  height: 4px; }
+
+.irs-grid-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 9px;
+  line-height: 9px;
+  padding: 0 3px;
+  color: #000; }
+
+.irs-disable-mask {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -1%;
+  width: 102%;
+  height: 100%;
+  cursor: default;
+  background: transparent;
+  z-index: 2; }
+
+.irs-disabled {
+  opacity: 0.4; }
+
+.lt-ie9 .irs-disabled {
+  filter: alpha(opacity=40); }
+
+.irs-hidden-input {
+  position: absolute !important;
+  display: block !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+  z-index: -9999 !important;
+  background: none !important;
+  border-style: solid !important;
+  border-color: transparent !important; }
+
 header {
   padding: 0.625em 0;
   box-shadow: 1px 2px 1px rgba(43, 44, 57, 0.2);
@@ -2493,6 +2660,17 @@ header {
       vertical-align: top;
       box-sizing: border-box;
       padding-right: 1.25em; }
+      .catalog .items .item.item-detail .detail-content .actions {
+        position: relative;
+        top: 1.5625em; }
+      .catalog .items .item.item-detail .detail-content .price-title {
+        font-weight: 900; }
+      .catalog .items .item.item-detail .detail-content .price-number {
+        color: #E42949;
+        padding-left: 0.3125em;
+        font-weight: 900; }
+        .catalog .items .item.item-detail .detail-content .price-number:before {
+          content: '$'; }
     .catalog .items .item.item-detail .info {
       display: inline-block;
       width: 79%;
@@ -2551,12 +2729,16 @@ header {
   margin-bottom: 1.25em; }
 
 .catalog .buttons {
-  display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   margin-bottom: 1.25em; }
   .catalog .buttons span {
-    width: 50%;
-    float: left;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+    margin-right: 0.625em;
     text-align: center;
     padding: 1.125em 0;
     box-sizing: border-box;
@@ -2565,8 +2747,8 @@ header {
     background-color: #A7A5A5; }
     .catalog .buttons span.active, .catalog .buttons span:hover {
       background-color: #E42949; }
-    .catalog .buttons span.active {
-      border-right: 10px solid white; }
+    .catalog .buttons span:last-child {
+      margin-right: 0; }
 
 .brands {
   padding: 1.25em 0 30 0;

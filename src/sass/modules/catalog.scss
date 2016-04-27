@@ -117,6 +117,24 @@
 					vertical-align: top;
 					box-sizing: border-box;
 					padding-right: em(20);
+
+					.actions {
+						position: relative;
+						top: em(25);
+					}
+
+					.price-title {
+						font-weight: 900;
+					}
+
+					.price-number {
+						color: $linkColor;
+						padding-left: em(5);
+						font-weight: 900;
+						&:before {
+							content: '$';
+						}
+					}
 				}
 
 				.info {
@@ -198,13 +216,13 @@
 	}
 
 	.buttons {
-		display: inline-block;
+		display: flex;
 		width: 100%;
 		margin-bottom: em(20);
 
 		span {
-			width: 50%;
-			float: left;
+			flex: auto;
+			margin-right: em(10);
 			text-align: center;
 			padding: em(18) 0;
 			box-sizing: border-box;
@@ -215,8 +233,8 @@
 				background-color: $linkColor;
 			}
 
-			&.active {
-				border-right: 10px solid $white;
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 	}

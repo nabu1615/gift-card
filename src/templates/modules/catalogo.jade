@@ -33,8 +33,9 @@
 				input(type="search" placeholder="Busca entre más de 50 marcas" class="search" id="search")
 			.filter
 				.buttons
-					span.type1.active Tarjetas Fisicas
-					span.type2 Tarjetas Virtuales
+					span.type1.active Todas
+					span.type2 Fisicas
+					span.type2 Virtuales
 				.items
 					.item
 						.item-content
@@ -82,8 +83,14 @@
 								fieldset.notes
 									textarea#notes(name="", cols="30", rows="10" placeholder= "name")
 							.detail-content
-								a(href="").create-address Crear dirección de envio
-								a(href="").add-car Añadir al carrito
+								.range
+									.range-price
+										span.price-title Precio:
+										span#price-number.price-number
+										input(type="text" id="range-detail" name="range-detail")
+									.actions
+										a(href="").create-address Crear dirección de envio
+										a(href="").add-car Añadir al carrito
 					.item
 						.item-content
 							.image
