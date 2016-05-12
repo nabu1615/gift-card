@@ -37,7 +37,7 @@
 					span.type2 Fisicas
 					span.type2 Virtuales
 				.items
-					.item
+					.item.active
 						.item-content
 							.image
 								img(src="images/fpo/logo-example.jpg", alt="")
@@ -87,20 +87,44 @@
 									.range-price
 										span.price-title Precio:
 										span#price-number.price-number
-										input(type="text" id="range-detail" name="range-detail")
+										input(type="text" class="range-item" id="range-detail" name="range-detail")
 									.actions
-										a(href="").create-address Crear dirección de envio
-										a(href="").add-car Añadir al carrito
-					.item
+										a(href="").main-button.red-button Crear dirección de envio
+										a(href="").main-button.black-button Añadir al carrito
+					.item.item-detail.virtual.step-1
 						.item-content
 							.image
 								img(src="images/fpo/logo-example.jpg", alt="")
+							.info
 								span.brand Starbucks
-								span.price $20.000 - $100.000
-					.item
+								span.text Treat your self - or someone else - to something special at Starbucks with  a Starbucks Gift Card.
+							.detail-content
+								.range
+									.range-price
+										span.price-title Precio:
+										span#price-number.price-number
+										input(type="text" class="range-item" id="range-detail" name="range-detail")
+							.actions.f-right
+								a(href="").main-button.red-button Personaliza tarjeta
+					.item.item-detail.virtual.step-2
 						.item-content
-							.image
-								img(src="images/fpo/logo-example.jpg", alt="")
-								span.brand Starbucks
-								span.price $20.000 - $100.000
+							p.title Selecciona el diseño base que más te guste
+							.box-preview
+								.preview-card
+									.item
+										.image
+											img(src="images/fpo/preview-card.png", alt="")
+									input.radio(type="radio" name="hello")
+								.preview-card
+									.item
+										.image
+											img(src="images/fpo/preview-card.png", alt="")
+									input.radio(type="radio" name="hello")
+								.preview-card
+									.item
+										.image
+											img(src="images/fpo/preview-card.png", alt="")
+									input.radio(type="radio" name="hello")
+							.actions
+								a(href="").main-button.red-button Personaliza tarjeta
 

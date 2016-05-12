@@ -55,7 +55,7 @@
           <div class="filter">
             <div class="buttons"><span class="type1 active">Todas</span><span class="type2">Fisicas</span><span class="type2">Virtuales</span></div>
             <div class="items">
-              <div class="item">
+              <div class="item active">
                 <div class="item-content">
                   <div class="image"><img src="images/fpo/logo-example.jpg" alt="">
                     <div class="info"><span class="brand">Starbucks</span><span class="price">$20.000 - $100.000</span></div>
@@ -105,21 +105,51 @@
                   <div class="detail-content">
                     <div class="range">
                       <div class="range-price"><span class="price-title">Precio:</span><span id="price-number" class="price-number"></span>
-                        <input type="text" id="range-detail" name="range-detail">
+                        <input type="text" id="range-detail" name="range-detail" class="range-item">
                       </div>
-                      <div class="actions"><a href="" class="create-address">Crear dirección de envio</a><a href="" class="add-car">Añadir al carrito</a></div>
+                      <div class="actions"><a href="" class="main-button red-button">Crear dirección de envio</a><a href="" class="main-button black-button">Añadir al carrito</a></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item item-detail virtual step-1">
                 <div class="item-content">
-                  <div class="image"><img src="images/fpo/logo-example.jpg" alt=""><span class="brand">Starbucks</span><span class="price">$20.000 - $100.000</span></div>
+                  <div class="image"><img src="images/fpo/logo-example.jpg" alt=""></div>
+                  <div class="info"><span class="brand">Starbucks</span><span class="text">Treat your self - or someone else - to something special at Starbucks with  a Starbucks Gift Card.</span></div>
+                  <div class="detail-content">
+                    <div class="range">
+                      <div class="range-price"><span class="price-title">Precio:</span><span id="price-number" class="price-number"></span>
+                        <input type="text" id="range-detail" name="range-detail" class="range-item">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="actions f-right"><a href="" class="main-button red-button">Personaliza tarjeta</a></div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item item-detail virtual step-2">
                 <div class="item-content">
-                  <div class="image"><img src="images/fpo/logo-example.jpg" alt=""><span class="brand">Starbucks</span><span class="price">$20.000 - $100.000</span></div>
+                  <p class="title">Selecciona el diseño base que más te guste</p>
+                  <div class="box-preview">
+                    <div class="preview-card">
+                      <div class="item">
+                        <div class="image"><img src="images/fpo/preview-card.png" alt=""></div>
+                      </div>
+                      <input type="radio" name="hello" class="radio">
+                    </div>
+                    <div class="preview-card">
+                      <div class="item">
+                        <div class="image"><img src="images/fpo/preview-card.png" alt=""></div>
+                      </div>
+                      <input type="radio" name="hello" class="radio">
+                    </div>
+                    <div class="preview-card">
+                      <div class="item">
+                        <div class="image"><img src="images/fpo/preview-card.png" alt=""></div>
+                      </div>
+                      <input type="radio" name="hello" class="radio">
+                    </div>
+                  </div>
+                  <div class="actions"><a href="" class="main-button red-button">Personaliza tarjeta</a></div>
                 </div>
               </div>
             </div>

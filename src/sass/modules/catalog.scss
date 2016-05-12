@@ -8,7 +8,7 @@
 	}
 
 	 .items .item.item-detail {
-		width: 75%;
+		width: 100%;
 		padding-left: 0;
 	}
 
@@ -42,10 +42,23 @@
 		.item {
 			padding: 0 em(5);
 			width: 25%;
+			position: relative;
 			float: left;
 			padding-bottom: em(11);
 			box-sizing: border-box;
 			cursor: pointer;
+
+			&.active:after {
+				content: "";
+				position: absolute;
+				bottom: em(2);
+				right: 105px;
+				width: 0px;
+				height: 0px;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-top: 10px solid rgba($textColor, .7);
+			}
 
 			&:nth-child(n+4) {
 				padding-right: 0;
@@ -57,6 +70,28 @@
 				padding-right: 0;
 			}
 
+			&.virtual {
+				.item-content {
+					display: inline-block;
+				}
+
+				&.item-detail .detail-content {
+					margin-top: em(5);
+					padding-left: 20px;
+				}
+
+				.actions {
+					width: 100%;
+					text-align: right;
+					padding-right: 20px;
+					a {
+						width: auto;
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+				}
+			}
+
 			.address {
 				label {
 					padding-bottom: em(10);
@@ -64,24 +99,6 @@
 					width: 100%;
 					font-weight: 900;
 				}
-			}
-
-			.create-address, .add-car {
-				width: 100%;
-				display: inline-block;
-				padding: em(15) 0;
-				margin-bottom: em(15);
-				text-align: center;
-				color: $white;
-				font-size: em(14);
-			}
-
-			.add-car {
-				background-color: $linkColor;
-			}
-
-			.create-address {
-				background-color: $black;
 			}
 
 			&.item-detail {
@@ -100,6 +117,7 @@
 				select, textarea {
 					padding-right: em(10);
 					padding-left: em(10);
+					width: 100%;
 				}
 
 				form {
@@ -119,8 +137,7 @@
 					padding-right: em(20);
 
 					.actions {
-						position: relative;
-						top: em(25);
+						margin-top: em(25);
 					}
 
 					.price-title {
@@ -235,6 +252,64 @@
 
 			&:last-child {
 				margin-right: 0;
+			}
+		}
+	}
+
+	.virtual {
+		&.step-2 {
+			.item-content {
+				width: 100%;
+				padding: em(20);
+				box-sizing: border-box;
+			}
+
+			.title {
+				padding-bottom: em(15);
+				text-align: center;
+				font-weight: 800;
+			}
+
+			.actions {
+				margin: em(20) 0;
+				margin-bottom: 0;
+			}
+
+			.item {
+				width: 100%;
+			}
+
+			&.item.item-detail .image {
+				margin-top: em(20);
+			}
+
+			.header {
+				padding-bottom: em(90);
+			}
+
+			.preview-price {
+				text-align: right;
+				padding: 0 em(20);
+				color: $linkColor;
+				font-weight: 800;
+			}
+
+			.brand {
+				margin-top: em(15);
+			}
+		}
+
+		.box-preview {
+			display: flex;
+		}
+
+		.preview-card {
+			width: calc(100% * (1/3) - 10px - 1px);
+			text-align: center;
+			margin: 0 auto;
+			flex: auto;
+			.item .image {
+				width: 100%;
 			}
 		}
 	}

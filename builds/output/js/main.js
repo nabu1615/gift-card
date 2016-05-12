@@ -32,20 +32,20 @@ $(function() {
     });
 
 
-    $("#range-detail").ionRangeSlider({
+    $(".range-item").ionRangeSlider({
         type: "single",
         values: [0, 10, 100, 1000, 10000, 100000, 1000000]
     });
 
-    function hello() {
+    function range() {
         var rangeText = $('.irs-single').text();
         return $(".range").find("#price-number").text(rangeText);
-    };
+    }
 
-    setInterval(function hello() {
-        var rangeText = $('.irs-single').text();
-        return $(".range").find("#price-number").text(rangeText);
-    }, 5);
+    // setInterval(function range() {
+    //     var rangeText = $('.irs-single').text();
+    //     return $(".range").find("#price-number").text(rangeText);
+    // }, 5);
 
 
 
