@@ -33,9 +33,9 @@
 				input(type="search" placeholder="Busca entre más de 50 marcas" class="search" id="search")
 			.filter
 				.buttons
-					span.type1.active Todas
-					span.type2 Fisicas
-					span.type2 Virtuales
+					a(href="").type1.active Todas
+					a(href="").type2 Fisicas
+					a(href="").type2 Virtuales
 				.items
 					.item.active
 						.item-content
@@ -125,6 +125,18 @@
 										.image
 											img(src="images/fpo/preview-card.png", alt="")
 									input.radio(type="radio" name="hello")
+					.item.item-detail.virtual.step-3
+						.item-content
+							p.title Así lice tu tarjeta:
+							.box-preview
+								.preview-card
+									.item
+										.image
+											img(src="images/fpo/preview-card.png", alt="")
+								.form
+									input(type="mail" placeholder="E. correo@correo.com")
+									textarea(name="", cols="30", rows="10" placeholder="Mensaje correo")
 							.actions
-								a(href="").main-button.red-button Personaliza tarjeta
+								a(href="").main-button.black-button Editar Tarjeta
+								a(href="").main-button.red-button Enviar Tarjeta
 

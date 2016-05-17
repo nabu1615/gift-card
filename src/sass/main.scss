@@ -21,7 +21,7 @@
 
 .radio {
 	appearance: radio;
-	display: inline-block;
+	display: inline-block !important;
 	border: none;
 	width: auto;
 	box-shadow: none;
@@ -47,6 +47,28 @@
 
 .black-button {
 	background-color: $black;
+}
+
+.list-view .summary {
+	display: inline-block;
+	width: 100%;
+	padding-bottom: em(20);
+	font-size: em(14);
+}
+
+.form-group {
+	margin-bottom: 15px;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
+
+	.input-group {
+		width: 100%;
+	}
+
+	.control-label {
+		font-weight: 800;
+	}
 }
 
 body {
@@ -105,6 +127,10 @@ select {
 	font-size: em(14);
 	border: 1px solid rgba($textColor, .2);
 	border-radius: 0;
+	color: $textColor;
+}
+
+input::placeholder {
 	color: $textColor;
 }
 
