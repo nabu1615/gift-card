@@ -5,6 +5,9 @@ $(function() {
     slideHome = $('.slide-home'),
     slideBrands = $('.slide-brands'),
     isDraggin = false,
+    contactNav = $("#contact-nav"),
+    contactDiv = $(".contact"),
+    contactClose = $(".contact .close"),
     rangeSelector = $(".range");
 
    $(pull).on('click', function(e) {
@@ -17,6 +20,16 @@ $(function() {
         if(w > 768 ) {
             menu.removeAttr('style');
         }
+    });
+
+    $(contactNav).on('click', function(){
+        $(contactDiv).fadeToggle();
+        $(".modal-backdrop").fadeIn();
+    });
+
+    $(contactClose).on('click', function(){
+        $(contactDiv).fadeToggle();
+         $(".modal-backdrop").fadeOut();
     });
 
     $(slideHome).slick({

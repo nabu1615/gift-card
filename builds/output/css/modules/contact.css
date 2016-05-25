@@ -1,0 +1,60 @@
+.contact {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  font-size: 0.875em; }
+  .contact .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 5%;
+    position: relative;
+    padding: 2.5em;
+    box-sizing: border-box; }
+  .contact .title {
+    padding: 0 0 0.625em;
+    font-weight: bold;
+    font-size: 2em; }
+  .contact .intro {
+    display: block;
+    padding: 0.625em 0; }
+    .contact .intro .detail {
+      color: #E42949;
+      font-weight: 800; }
+      .contact .intro .detail:hover {
+        opacity: .8; }
+  .contact .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.75em;
+    cursor: pointer; }
+    .contact .close:hover {
+      opacity: .4; }
+  .contact .contact-submit {
+    width: auto;
+    padding: 0.625em 1.25em;
+    margin: 1.25em 0; }
+  .contact .field {
+    display: block;
+    padding: 0.625em 0; }
+    .contact .field:first-child {
+      padding-top: 1.875em; }
+    .contact .field .label {
+      display: block;
+      padding-bottom: 0.625em;
+      text-transform: uppercase;
+      font-weight: 800; }
+    .contact .field input::-webkit-input-placeholder, .contact .field textarea::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.3); }
+    .contact .field input::-moz-placeholder, .contact .field textarea::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.3); }
+    .contact .field input:-ms-input-placeholder, .contact .field textarea:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.3); }
+    .contact .field input::placeholder, .contact .field textarea::placeholder {
+      color: rgba(0, 0, 0, 0.3); }
+    .contact .field input, .contact .field textarea {
+      padding: 0.625em;
+      background-color: white; }
