@@ -48,7 +48,6 @@
     .catalog .items .item:last-child {
       padding-right: 0; }
     .catalog .items .item.virtual .item-content {
-      display: inline-block;
       width: 100%; }
     .catalog .items .item.virtual.item-detail .detail-content {
       margin-top: 0.3125em;
@@ -72,6 +71,12 @@
       padding-left: 1.25em; }
       .catalog .items .item.item-detail .image img {
         width: 100%; }
+    .catalog .items .item.item-detail .detail-form {
+      margin-top: 1.875em;
+      padding: 0 1.25em;
+      width: 50%;
+      display: inline-block;
+      box-sizing: border-box; }
     .catalog .items .item.item-detail textarea {
       margin: 0.9375em 0;
       max-width: 100%;

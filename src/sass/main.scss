@@ -193,3 +193,52 @@ input::placeholder {
 	}
 }
 
+ /* Byron Styles */
+
+/* bh */
+.field-hidden {
+    display: none;
+}
+
+.home .slide-home.slick-slider {
+    margin-bottom: 0;
+}
+
+.home .slide-home .slick-dots li button:before,
+.home .slide-home .slick-dots li.slick-active button:before {
+    content: "";
+}
+
+.catalog .items .item.item-detail .detail-content .price-number:before {
+  content: ''; }
+
+.info-data .steps {
+    display: none;
+}
+
+.wizard > .content {
+    min-height: auto;
+    background: transparent;
+    width: 100%;
+    margin: 0;
+}
+
+.wizard > .content > .body {
+    height: auto;
+}
+
+.mfp-content .address-form {
+    width: 400px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+}
+
+.pagination {
+    clear: both;
+    text-align: center;
+
+    li {
+    	display: inline-block;
+    }
+}

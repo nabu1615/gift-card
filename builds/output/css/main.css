@@ -2177,7 +2177,9 @@ table {
   overflow: hidden;
   outline: none !important;
   background-color: #6B6B6B;
-  height: 8px; }
+  background: #6B6B6B;
+  height: 8px;
+  top: 0; }
 
 .irs-line-left, .irs-line-mid, .irs-line-right {
   position: absolute;
@@ -2200,13 +2202,17 @@ table {
   position: absolute;
   display: block;
   left: 0;
-  width: 0; }
+  width: 0;
+  border: none;
+  background: transparent; }
 
 .irs-bar-edge {
   position: absolute;
   display: block;
   top: 0;
-  left: 0; }
+  left: 0;
+  border: none;
+  background: transparent; }
 
 .irs-shadow {
   position: absolute;
@@ -2632,7 +2638,6 @@ header {
     .catalog .items .item:last-child {
       padding-right: 0; }
     .catalog .items .item.virtual .item-content {
-      display: inline-block;
       width: 100%; }
     .catalog .items .item.virtual.item-detail .detail-content {
       margin-top: 0.3125em;
@@ -2656,6 +2661,12 @@ header {
       padding-left: 1.25em; }
       .catalog .items .item.item-detail .image img {
         width: 100%; }
+    .catalog .items .item.item-detail .detail-form {
+      margin-top: 1.875em;
+      padding: 0 1.25em;
+      width: 50%;
+      display: inline-block;
+      box-sizing: border-box; }
     .catalog .items .item.item-detail textarea {
       margin: 0.9375em 0;
       max-width: 100%;
@@ -2845,8 +2856,6 @@ header {
     width: 100%; }
 
 .contact {
-  display: none;
-  position: absolute;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -3125,3 +3134,42 @@ input::placeholder {
   font-family: "Open Sans", sans-serif; }
   .btn:hover {
     opacity: .7; }
+
+/* Byron Styles */
+/* bh */
+.field-hidden {
+  display: none; }
+
+.home .slide-home.slick-slider {
+  margin-bottom: 0; }
+
+.home .slide-home .slick-dots li button:before,
+.home .slide-home .slick-dots li.slick-active button:before {
+  content: ""; }
+
+.catalog .items .item.item-detail .detail-content .price-number:before {
+  content: ''; }
+
+.info-data .steps {
+  display: none; }
+
+.wizard > .content {
+  min-height: auto;
+  background: transparent;
+  width: 100%;
+  margin: 0; }
+
+.wizard > .content > .body {
+  height: auto; }
+
+.mfp-content .address-form {
+  width: 400px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px; }
+
+.pagination {
+  clear: both;
+  text-align: center; }
+  .pagination li {
+    display: inline-block; }

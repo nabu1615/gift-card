@@ -1,0 +1,17 @@
+.cart .container-fluid {
+  width: 90%;
+  margin: 0 auto; }
+
+.cart .cart-title {
+  padding: 1.25em 0;
+  font-weight: 900;
+  font-size: 1.375em; }
+
+.cart .cart-table {
+  border: 1px solid rgba(128, 128, 128, 0.4); }
+
+.cart .cart-table-item {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  margin: 1.25em 0;
+  padding: 0.5em 0;
+  vertical-align: bottom; }

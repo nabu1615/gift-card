@@ -1,0 +1,27 @@
+@import 'variables';
+
+
+.cart {
+	.container-fluid {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.cart-title {
+		padding: em(20) 0;
+		font-weight: 900;
+		font-size: em(22);
+	}
+
+	.cart-table {
+		border: 1px solid rgba(gray, .4);
+	}
+
+	.cart-table-item {
+		border-bottom: 1px solid rgba(gray, .4);
+		margin: em(20) 0;
+		padding: em(8) 0;
+		vertical-align: bottom;
+	}
+}
+

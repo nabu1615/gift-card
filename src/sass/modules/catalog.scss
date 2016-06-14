@@ -72,7 +72,6 @@
 
 			&.virtual {
 				.item-content {
-					display: inline-block;
 					width: 100%;
 				}
 
@@ -110,6 +109,14 @@
 					img {
 						width: 100%;
 					}
+				}
+
+				.detail-form {
+					margin-top: 1.875em;
+					padding: 0 1.25em;
+					width: 50%;
+					display: inline-block;
+					box-sizing: border-box;
 				}
 
 				textarea {
