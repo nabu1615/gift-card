@@ -10,6 +10,9 @@
   background-color: #E42949;
   color: white;
   font-size: 1.375em; }
+  @media screen and (max-width: 768px) {
+    .steps .intro {
+      margin-bottom: 0.9375em; } }
 
 .steps .items, .steps .center-image {
   float: left; }
@@ -22,11 +25,30 @@
   padding: 0 30px; }
   .steps .item:nth-child(even) {
     margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      .steps .item:nth-child(even) {
+        margin-bottom: 1.25em; } }
+  @media screen and (max-width: 768px) {
+    .steps .item {
+      display: block;
+      text-align: center;
+      margin-bottom: 0em;
+      padding: 1.25em 0;
+      border-bottom: 1px solid #bdbbb2; } }
   .steps .item .text {
     padding: 0 20px;
     margin-top: 2.5em; }
+    @media screen and (max-width: 768px) {
+      .steps .item .text {
+        margin-top: 15px; } }
   .steps .item .title, .steps .item .info {
     width: 100%; }
+  @media screen and (max-width: 768px) {
+    .steps .item .image {
+      width: 50px;
+      margin: 0 auto; }
+      .steps .item .image img {
+        width: 100%; } }
   .steps .item .title {
     font-weight: 800;
     margin-bottom: 0.625em;
@@ -36,6 +58,9 @@
 
 .steps .items {
   width: 38%; }
+  @media screen and (max-width: 768px) {
+    .steps .items {
+      width: 100%; } }
 
 .steps .reverse {
   -webkit-flex-direction: row-reverse;
@@ -48,3 +73,6 @@
   margin-top: 5em;
   background-size: 100%;
   background-image: url("../images/fpo/phone.png"); }
+  @media screen and (max-width: 768px) {
+    .steps .center-image {
+      display: none; } }

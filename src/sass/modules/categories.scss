@@ -1,18 +1,49 @@
+@import 'variables';
+
 .categories {
 	display: block;
 	width: 100%;
 	text-align: center;
 	padding: em(20) 0;
 
+	.items {
+		@media screen and (max-width: $break-medium) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
 	.item {
 		display: inline-block;
 		padding: 0 20px em(10) 20px;
 		margin: 0 20px;
 		border-bottom: 6px solid rgba(0,0,0,.2);
+
+		@media screen and (max-width: $break-medium) {
+			margin-bottom: em(0);
+			border: none;
+			flex: auto;
+			font-size: em(12);
+			padding: em(10) 0;
+			margin: 0;
+			display: inline-block;
+			flex: auto;
+
+			.text {
+				line-height: 1.2;
+			}
+		}
 	}
 
 	.image {
 		padding-bottom: em(10);
+		@media screen and (max-width: $break-medium) {
+			width: 30px;
+			margin: 0 auto;
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 	.btn {

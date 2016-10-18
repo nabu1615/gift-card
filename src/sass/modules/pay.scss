@@ -11,6 +11,10 @@
 		font-weight: 100;
 		font-size: em(32);
 		padding: em(15) 0 em(10) 0;
+		@media screen and (max-width: $break-medium) {
+			font-size: em(28);
+			line-height: 1.2;
+		}
 	}
 
 	.item .image {

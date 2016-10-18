@@ -140,11 +140,23 @@ header {
 	}
 
 	.main-nav ul {
+		@media screen and (max-width: $break-medium) {
+			width: 100%;
+		}
+
 		li {
 			display: inline-block;
 			font-weight: bold;
 			font-size: em(16);
 			padding: 0 em(10);
+			@media screen and (max-width: $break-medium) {
+				padding: em(10) 0;
+				border-bottom: 1px solid rgba(#ededed, .8);
+				margin: 0;
+				&:last-child {
+					border: none;
+				}
+			}
 		}
 	}
 }

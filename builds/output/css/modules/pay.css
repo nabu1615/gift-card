@@ -7,6 +7,10 @@
     font-weight: 100;
     font-size: 2em;
     padding: 0.9375em 0 0.625em 0; }
+    @media screen and (max-width: 768px) {
+      .brands .title {
+        font-size: 1.75em;
+        line-height: 1.2; } }
   .brands .item .image {
     display: -webkit-flex;
     display: -ms-flexbox;

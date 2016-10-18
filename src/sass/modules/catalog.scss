@@ -47,6 +47,9 @@
 			padding-bottom: em(11);
 			box-sizing: border-box;
 			cursor: pointer;
+			@media screen and (max-width: $break-medium) {
+				width: 50%;
+			}
 
 			&.active:after {
 				content: "";
@@ -203,6 +206,9 @@
 		padding-bottom: em(20);
 		color: $textColor;
 		padding-right: em(20);
+		@media screen and (max-width: $break-medium) {
+			width: 100%;
+		}
 
 		.title {
 			padding-bottom: em(20);
@@ -234,6 +240,23 @@
 		li {
 			padding: em(10) 0 em(10) em(25);
 			font-size: .8em;
+			@media screen and (max-width: $break-medium) {
+				display: inline-block;
+				border: 1px solid rgba(#dedede, .6);
+				text-align: center;
+				padding: em(10) 20px;
+				margin-bottom: em(5);
+				font-weight: 800;
+				&:hover {
+					background-color: $linkColor;
+					color: white;
+					border: none;
+				}
+
+				a:hover {
+					color: white;
+				}
+			}
 		}
 	}
 
@@ -241,6 +264,9 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 82%;
+		@media screen and (max-width: $break-medium) {
+			width: 100%;
+		}
 	}
 
 	.search {

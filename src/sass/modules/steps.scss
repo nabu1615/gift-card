@@ -14,6 +14,9 @@
 		background-color: $linkColor;
 		color: $white;
 		font-size: em(22);
+		@media screen and (max-width: $break-medium) {
+			margin-bottom: em(15);
+		}
 	}
 
 	.items, .center-image {
@@ -26,13 +29,39 @@
 		padding: 0 30px;
 		&:nth-child(even){
 			margin-bottom: 0;
+			@media screen and (max-width: $break-medium) {
+				margin-bottom: em(20);
+			}
 		}
+		@media screen and (max-width: $break-medium) {
+			display: block;
+			text-align: center;
+			margin-bottom: em(0);
+			padding: em(20) 0;
+			border-bottom: 1px solid #bdbbb2;
+		}
+
 		.text {
 			padding: 0 20px;
 			margin-top: em(40);
+
+			@media screen and (max-width: $break-medium) {
+				margin-top: 15px;
+			}
 		}
 		.title, .info {
 			width: 100%;
+		}
+
+		.image {
+			@media screen and (max-width: $break-medium) {
+				width: 50px;
+				margin: 0 auto;
+
+				img {
+					width: 100%;
+				}
+			}
 		}
 
 		.title {
@@ -48,6 +77,9 @@
 
 	.items {
 		width: 38%;
+		@media screen and (max-width: $break-medium) {
+			width: 100%;
+		}
 	}
 
 	.reverse {
@@ -60,5 +92,8 @@
 		margin-top: em(80);
 		background-size: 100%;
 		background-image: url('../images/fpo/phone.png');
+		@media screen and (max-width: $break-medium) {
+			display: none;
+		}
 	}
 }
