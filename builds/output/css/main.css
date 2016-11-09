@@ -2601,11 +2601,15 @@ header {
           flex-direction: row-reverse; }
 
 .steps .center-image {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin-top: 5em;
   background-size: 100%;
   background-image: url("../images/fpo/phone.png"); }
+  @media screen and (max-width: 1015px) {
+    .steps .center-image {
+      width: 150px;
+      height: 150px; } }
   @media screen and (max-width: 768px) {
     .steps .center-image {
       display: none; } }
@@ -2706,6 +2710,9 @@ header {
       padding-right: 0; }
     .catalog .items .item:first-child {
       padding-left: 0; }
+      @media screen and (max-width: 768px) {
+        .catalog .items .item:first-child {
+          padding: 0 0.3125em; } }
     .catalog .items .item:last-child {
       padding-right: 0; }
     .catalog .items .item.virtual .item-content {
@@ -2801,7 +2808,7 @@ header {
   padding-bottom: 1.25em;
   color: #6B6B6B;
   padding-right: 1.25em; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1015px) {
     .catalog aside {
       width: 100%; } }
   .catalog aside .title {
@@ -2828,7 +2835,7 @@ header {
   .catalog .nav-categories li {
     padding: 0.625em 0 0.625em 1.5625em;
     font-size: .8em; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1015px) {
       .catalog .nav-categories li {
         display: inline-block;
         border: 1px solid rgba(222, 222, 222, 0.6);
@@ -2847,7 +2854,7 @@ header {
   display: inline-block;
   vertical-align: top;
   width: 82%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1015px) {
     .catalog .content {
       width: 100%; } }
 
@@ -3114,6 +3121,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0; }
+
+@media screen and (max-width: 768px) {
+  .slide-brands {
+    display: none; } }
 
 .modal-backdrop {
   position: fixed;

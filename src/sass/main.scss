@@ -19,6 +19,12 @@ body {
 	padding: 0;
 }
 
+.slide-brands {
+	@media screen and (max-width: $break-medium) {
+		display: none;
+	}
+}
+
 .modal-backdrop {
 	position: fixed;
 	top: 0;

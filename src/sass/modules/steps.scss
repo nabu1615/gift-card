@@ -87,11 +87,15 @@
 	}
 
 	.center-image {
-		width: 250px;
-		height: 250px;
+		width: 200px;
+		height: 200px;
 		margin-top: em(80);
 		background-size: 100%;
 		background-image: url('../images/fpo/phone.png');
+		@media screen and (max-width: $break-padding) {
+			width: 150px;
+			height: 150px;
+		}
 		@media screen and (max-width: $break-medium) {
 			display: none;
 		}

@@ -68,6 +68,9 @@
 			}
 			&:first-child {
 				padding-left: 0;
+				@media screen and (max-width: $break-medium) {
+					padding: 0 0.3125em;
+				}
 			}
 			&:last-child {
 				padding-right: 0;
@@ -206,7 +209,7 @@
 		padding-bottom: em(20);
 		color: $textColor;
 		padding-right: em(20);
-		@media screen and (max-width: $break-medium) {
+		@media screen and (max-width: $break-padding) {
 			width: 100%;
 		}
 
@@ -240,7 +243,7 @@
 		li {
 			padding: em(10) 0 em(10) em(25);
 			font-size: .8em;
-			@media screen and (max-width: $break-medium) {
+			@media screen and (max-width: $break-padding) {
 				display: inline-block;
 				border: 1px solid rgba(#dedede, .6);
 				text-align: center;
@@ -264,7 +267,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 82%;
-		@media screen and (max-width: $break-medium) {
+		@media screen and (max-width: $break-padding) {
 			width: 100%;
 		}
 	}

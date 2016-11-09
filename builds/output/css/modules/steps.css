@@ -68,11 +68,15 @@
           flex-direction: row-reverse; }
 
 .steps .center-image {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin-top: 5em;
   background-size: 100%;
   background-image: url("../images/fpo/phone.png"); }
+  @media screen and (max-width: 1015px) {
+    .steps .center-image {
+      width: 150px;
+      height: 150px; } }
   @media screen and (max-width: 768px) {
     .steps .center-image {
       display: none; } }
